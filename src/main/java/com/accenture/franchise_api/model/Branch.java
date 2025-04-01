@@ -30,4 +30,24 @@ public class Branch {
 
     @OneToMany(mappedBy = "branch", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Product> products = new ArrayList<>();
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Franchise getFranchise() {
+        return franchise;
+    }
+
+    public void setFranchise(Franchise franchise) {
+        this.franchise = franchise;
+    }
 }

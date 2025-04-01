@@ -28,4 +28,32 @@ public class Product {
     @JsonIgnore
     private Branch branch;
 
+    public Long getId() {
+        return id;
+    }
+
+    public Branch getBranch() {
+        return branch;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
+
+    public void setBranch(Branch branch) {
+        this.branch = branch;
+    }
+
 }

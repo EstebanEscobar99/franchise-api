@@ -9,9 +9,10 @@ franchise-api/
 │   ├── main/
 │   │   ├── java/com/accenture/franchise_api/
 │   │   │   ├── controller/
+│   │   │   ├── dto/
 │   │   │   ├── model/
+│   │   │   ├── repository/
 │   │   │   ├── service/
-│   │   │   │   ├── impl/
 │   │   │   └── FranchiseApiApplication.java
 │   │   └── resources/
 │   │       └── application.properties
@@ -30,8 +31,6 @@ franchise-api/
 
 ## Ejecución Local
 
-### Método 1: Usando Java y MySQL instalados localmente
-
 1. Clonar el repositorio:
     ```bash
    git clone https://github.com/EstebanEscobar99/franchise-api.git
@@ -39,7 +38,7 @@ franchise-api/
     ```
 2. Configurar la base de datos MySQL:
 
-   - Asegúrate de tener MySQL corriendo en localhost:3306
+   - Asegúrate de tener MySQL corriendo en el puerto 3306
    - Crea una base de datos llamada `franchise_db` (la aplicación puede crearla automáticamente si tiene permisos)
    - Verifica las credenciales en `src/main/resources/application.properties`
 
